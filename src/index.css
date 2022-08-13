@@ -1,13 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #1A2238;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
+
+
+a.active{
+  color: #FF6A3D;
+}
+
+span{
+  color: #FF6A3D;
+}
+
+nav{
+  background: #192138;
+}
+
+.card{
+  color: #1A2238;
+}
+
+.spn{
+  text-decoration: underline;
+  text-decoration-color: #F4DB7D;
+  text-decoration-thickness: 4px;
+}
+
+.greet{
+  color: #9DAAF2;
+}
+
+.resume{
+  color: #FF6A3D;
+}
+
+
+.mobile-navigation {
+  display: none;
+}
+
+
+@media(max-width: 768px){
+  .navigation{
+    display: none;
+  }
+
+  .mobile-navigation{
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-navigation .hamburger{
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .mobile-navigation .navlinks{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    background: #1A2238;
+    border-top: 2px solid #FF6A3D;
+  }
+
+  .mobile-navigation .navlink{
+    display: block;
+    width: 100%;
+    border-bottom: 1px dashed #9DAAF2;
+  }
+
+  .mobile-navigation .navlink a{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+}
+
+
