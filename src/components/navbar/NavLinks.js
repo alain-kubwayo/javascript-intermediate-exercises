@@ -22,21 +22,21 @@ const linkVariants = {
 
 export default function NavLinks(props) {
   return (
-    <div className="md:flex md:items-center md:justify-center md:space-x-16 md:text-md navlinks">
+    <div className="md:flex md:items-center md:justify-between md:space-x-8 md:text-md navlinks">
         <motion.div onClick={()=>props.isMobile && props.closeMobileMenu()} className="navlink" variants={linkVariants} whileHover="hover" initial="hidden" animate="visible" transition={{ delay: 0.05 }}>
-            <NavLink to="/" className="px-2 py-1 space-x-1 text-center hover:underline">About</NavLink>
+            <NavLink to="/" className="py-1 space-x-1 text-center hover:underline">About</NavLink>
         </motion.div>
         <motion.div onClick={()=>props.isMobile && props.closeMobileMenu()} className="navlink" variants={linkVariants} whileHover="hover" initial="hidden" animate="visible" transition={{ delay: 0.15 }}>
-            <NavLink to="/education" className="px-2 py-1 space-x-1 text-center hover:underline">Education</NavLink>
+            <NavLink to="/education" className="py-1 space-x-1 text-center hover:underline">Education</NavLink>
         </motion.div>
         <motion.div onClick={()=>props.isMobile && props.closeMobileMenu()} className="navlink" variants={linkVariants} whileHover="hover" initial="hidden" animate="visible" transition={{ delay: 0.25 }}>
-            <NavLink to="/trainings" className="px-2 py-1 space-x-1 text-center hover:underline">Trainings</NavLink>
+            <NavLink to="/trainings" className="py-1 space-x-1 text-center hover:underline">Trainings</NavLink>
         </motion.div>
         <motion.div onClick={()=>props.isMobile && props.closeMobileMenu()} className="navlink" variants={linkVariants} whileHover="hover" initial="hidden" animate="visible" transition={{ delay: 0.35 }}>
-            <NavLink to="/skills" className="px-2 py-1 space-x-1 text-center hover:underline">Skills</NavLink>
+            <NavLink to="/skills" className="py-1 space-x-1 text-center hover:underline">Skills</NavLink>
         </motion.div>
         <motion.div onClick={()=>props.isMobile && props.closeMobileMenu()} className="navlink" variants={linkVariants} whileHover="hover" initial="hidden" animate="visible" transition={{ delay: 0.45 }}>
-            <NavLink to="/projects" className="px-2 py-1 space-x-1 text-center hover:underline">Projects</NavLink>
+            <NavLink to="/projects" className="py-1 space-x-1 text-center hover:underline">Projects</NavLink>
         </motion.div>
     </div>
   )

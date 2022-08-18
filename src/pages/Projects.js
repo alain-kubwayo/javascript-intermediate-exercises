@@ -11,7 +11,7 @@ import {
 } from 'react-icons/si';
 
 import epms  from '../assets/epms.png';
-import taskCatalyst from '../assets/task-catalyst-screenshot.png';
+import dbank from '../assets/defi-dbank.png';
 
 const containerVariants = {
   hidden: {
@@ -53,7 +53,7 @@ export default function Projects() {
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="visible" exit="exit" className="w-full px-4 py-4 mx-auto font-thin leading-10 md:py-16 md:px-0 md:w-4/5 lg:w-1/2">
       <motion.div variants={projectVariants} initial="hidden" animate="visible">
-        <div className="overflow-scroll text-center bg-white rounded-lg md:text-left card">
+        <div className="mb-4 overflow-scroll text-center bg-white rounded-lg md:text-left card">
           <div>
             <img src={epms} alt="Dashboard screenshot - EPMS" className="w-full rounded-t-lg" />
           </div>
@@ -81,6 +81,36 @@ export default function Projects() {
               <div className="flex justify-end space-x-4">
                 <a href="https://github.com/alain-kubwayo/epms" target="_blank"><AiFillGithub style={{ color: '#333', fontSize: '40px' }} /></a>
                 <a href="https://www.youtube.com/watch?v=ZljZxN1Op9I" target="_blank"><AiFillYoutube style={{ color: 'red', fontSize: '40px' }} /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="overflow-scroll text-center bg-white rounded-lg md:text-left card">
+          <div>
+            <img src={dbank} alt="DeFi DBank screenshot" className="w-full rounded-t-lg" />
+          </div>
+          <div className="px-4 py-4">
+            <h2 className="font-semibold">DBank</h2>
+            <p>DBank is a DeFi (decentralized finance) DApp that is built using DFINITY’s Motoko programming language for the Internet Computer to tap into the power of blockchain technology. The app starts with an initial amount, initial investment if you will, 
+              and allows the users to top up as well as withdraw provided enough funds are available. The compound interest is also implemented and applied for whenever the user tops up or withdraws and for the sake 
+              of testing, the interest is set up at 1% every second (😁). The frontend (HTML, CSS, JavaScript) is hooked up with the Internet Computer backend built in Motoko language to allow the user to interact with the system
+              and perform transactions.
+            </p>
+          </div>
+         
+          <div className="px-4">
+            <div className="flex items-center justify-between py-8">
+              <div>
+                <h3 className="mb-2">Tech Stack:</h3>
+                <div className="flex items-center justify-start space-x-2">
+                  <div><SiHtml5 style={{ color: 'orange', fontSize: '30px' }}/></div>
+                  <div><SiCss3 style={{ color: 'blue', fontSize: '30px' }}/></div>
+                  <div><SiJavascript style={{ background: '#333', color: 'yellow', fontSize: '30px' }}/></div>
+                  <div>Motoko</div>
+                </div>
+              </div>
+              <div className="flex justify-end space-x-4">
+                <a href="https://github.com/alain-kubwayo/epms" target="_blank"><AiFillGithub style={{ color: '#333', fontSize: '40px' }} /></a>
               </div>
             </div>
           </div>

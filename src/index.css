@@ -56,7 +56,7 @@ nav{
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 767px){
   .navigation{
     display: none;
   }
@@ -94,6 +94,9 @@ nav{
     display: block;
     width: 100%;
     text-align: left;
+  }
+  .header-svg{
+    display: none;
   }
 
 }
