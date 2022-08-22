@@ -9,6 +9,7 @@ import Navbar from './components/navbar/Navbar';
 import Skills from './pages/Skills';
 
 
+
 function App() {
   return (
     <div>
