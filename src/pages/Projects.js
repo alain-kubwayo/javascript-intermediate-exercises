@@ -12,6 +12,7 @@ import {
 
 import epms  from '../assets/epms.png';
 import dbank from '../assets/defi-dbank.png';
+import Wrapper from '../wrappers/Wrapper';
 
 const containerVariants = {
   hidden: {
@@ -50,15 +51,9 @@ const projectVariants = {
 }
 
 export default function Projects() {
-  const { scrollYProgress } = useScroll();
   return (
-    <>
-    <motion.div
-        className="z-50 w-full px-4 mx-auto progress-bar md:px-0 md:w-4/5 lg:w-1/2"
-        style={{ scaleX: scrollYProgress }}
-      />
-    
-    <motion.div variants={containerVariants} initial="hidden" animate="visible" exit="exit" className="w-full px-4 py-4 mx-auto font-thin leading-10 md:py-16 md:px-0 md:w-4/5 lg:w-1/2">
+    <Wrapper>
+    <motion.div variants={containerVariants} initial="hidden" animate="visible" exit="exit" className="w-full px-4 py-4 mx-auto font-thin leading-10 md:py-16 md:px-0">
       <motion.div variants={projectVariants} initial="hidden" animate="visible">
         <div className="mb-4 overflow-scroll text-center bg-white rounded-lg md:text-left card">
           <div>
@@ -124,6 +119,6 @@ export default function Projects() {
         </div>
       </motion.div>
     </motion.div>
-    </>
+    </Wrapper>
   )
 }
