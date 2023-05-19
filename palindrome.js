@@ -9,3 +9,4 @@ const palindrome = str => {
 
 console.log(palindrome('Abba')); // true
 console.log(palindrome('abcdefg')); // false
+console.log(palindrome('hannah')); // true
