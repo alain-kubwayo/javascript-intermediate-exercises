@@ -12,4 +12,4 @@ const searchingChallenge = strArr => {
     return Object.entries(obj).sort().map(arr => arr.join(':')).join(',');
 }
 
-console.log(typeof searchingChallenge(['Z:8',  'A:1', 'Y:12', 'A:1', 'B:3', 'A:-5']));
+console.log(typeof searchingChallenge(['A:1', 'A:1', 'B:3', 'A:5']));
